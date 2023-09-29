@@ -30,6 +30,7 @@ SECRET_KEY = 'django-insecure-gkv!%&223ev8vl=(+w5q&$q(*p+)l1iqn)5jvl02nr^3dt7bq2
 DEBUG = True
 
 ALLOWED_HOSTS = ['8000-jamesh003-cifsfhellodja-zc2c26l24fu.ws-eu105.gitpod.io']
+ALLOWED_HOSTS = ['jamesh003-django-todo-app-0508e4c8cc6a.herokuapp.com/']
 
 
 # Application definition
