@@ -31,7 +31,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['jamesh003-django-todo-app-0508e4c8cc6a.herokuapp.com']
 # ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME'), 'hello-django-fsf-tutorial-0e3964abd10c.herokuapp.com'] 
-
+ALLOWED_HOSTS = [os.environ.get('HEROKU_HOSTNAME')]
 
 # Application definition
 
@@ -87,7 +87,7 @@ WSGI_APPLICATION = 'django_todo.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse('postgres://xcyusvuk:F7bR8aA1MJ_f6Ya-6QnaunaUcf4wkA0E@flora.db.elephantsql.com/xcyusvuk')
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 
